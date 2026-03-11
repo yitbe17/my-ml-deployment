@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy your requirements list first (better for speed)
-COPY requirements.txt .
+COPY requirement.txt .
 
 # Install the libraries
 RUN pip install --no-cache-dir -r requirements.txt
@@ -15,3 +15,4 @@ COPY . .
 
 # THE MISSION: Run the script when the container starts
 CMD ["python", "app.py"]
+
