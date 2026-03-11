@@ -6,7 +6,7 @@ def run_analysis():
     time.sleep(1) # Adds a little dramatic effect
     
     # Look at the files in the current folder
-    files = os.listdir('.')
+    files = '.'
     
     # Count the images and data files
     images = [f for f in files if f.endswith('.png')]
