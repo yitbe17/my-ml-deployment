@@ -14,7 +14,8 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # THE MISSION: Run the script when the container starts
-CMD ["python", "app.py"]
+CMD ["gunicorn", "-b", "0.0.0.0:10000", "app:app"]
+
 
 
 
